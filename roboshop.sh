@@ -27,7 +27,7 @@ do
    --image-id ami-09c813fb71547fc4f \
    --instance-type t2.micro \
    --security-group-ids sg-0ac1e9a9f6e09f538 \
-   --tag-specifications '{"ResourceType":"instance","Tags":[{"Key":"Name","Value":"test"}]}'
+   --tag-specifications '{"ResourceType":"instance","Tags":[{"Key":"Name","Value":"test"}]}' \
    --query 'Instances[0].InstanceId' \
    --output text)
    if [ $instance != "frontend" ]
